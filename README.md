@@ -16,4 +16,4 @@ posts_examples.createPost("publish","Hello World","Lorem ipsum test post content
 ```
 Advanced Usage
 ---
-To get a full overview of the library and its methods, see src/test/scala/Examples.scala
+To get a full overview of the library and its methods, see src/main/scala/com/ghostutils/Examples.scala
