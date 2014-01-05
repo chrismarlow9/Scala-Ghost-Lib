@@ -1,0 +1,91 @@
+[0m[[0minfo[0m] [0mRunning com.ghostutils.Examples [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/Documents/BitBucketExport/GhostLibRaw/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/uk.co.bigbeeconsultants/bee-client_2.10/jars/bee-client_2.10-0.21.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.mortbay.jetty/servlet-api/jars/servlet-api-2.5.20110712.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.2.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.sbt/boot/scala-2.10.3/lib/scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/chrismarlow/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[31merror[0m] [0m(run-main) java.net.ConnectException: Connection refused[0m
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at uk.co.bigbeeconsultants.http.HttpClient.doExecute(HttpClient.scala:82)
+	at uk.co.bigbeeconsultants.http.response.RedirectionLogic$.doExecute(RedirectionLogic.scala:41)
+	at uk.co.bigbeeconsultants.http.HttpClient.execute(HttpClient.scala:66)
+	at uk.co.bigbeeconsultants.http.Http.makeRequest(Http.scala:175)
+	at uk.co.bigbeeconsultants.http.Http.get(Http.scala:85)
+	at com.ghostutils.Ghost$.apiGet(Ghost.scala:180)
+	at com.ghostutils.Ghost.apiGet(Ghost.scala:297)
+	at com.ghostutils.Ghost.signin(Ghost.scala:334)
+	at com.ghostutils.Examples$.main(Examples.scala:15)
+	at com.ghostutils.Examples.main(Examples.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sbt.Run.invokeMain(Run.scala:68)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.execute$1(Run.scala:50)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:54)
+	at sbt.TrapExit$.executeMain$1(TrapExit.scala:33)
+	at sbt.TrapExit$$anon$1.run(TrapExit.scala:42)
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1361)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1361)
+	at scala.Option.foreach(Option.scala:197)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1361)
+	at sbt.Defaults$.toError(Defaults.scala:34)
+	at sbt.Defaults$$anonfun$runMainTask$2$$anonfun$apply$26.apply(Defaults.scala:513)
+	at sbt.Defaults$$anonfun$runMainTask$2$$anonfun$apply$26.apply(Defaults.scala:512)
+	at sbt.Scoped$$anonfun$hf4$1.apply(Structure.scala:580)
+	at sbt.Scoped$$anonfun$hf4$1.apply(Structure.scala:580)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41)
+	at sbt.std.Transform$$anon$5.work(System.scala:71)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:238)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+[0m[[31merror[0m] [0m(compile:[31mrun-main[0m) Nonzero exit code: 1[0m

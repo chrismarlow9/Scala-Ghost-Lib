@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="scala-ghost-lib"
+		module="scala-ghost-lib_2.10"
+		revision="0.0.1"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20140104151748"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.10.3" status="release" pubdate="20130927024553" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2809" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.pom"/>
+				<caller organisation="org.scala-lang" name="scalap" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.3" status="release" pubdate="20130927024529" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2745" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.10.3"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3206936" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-native_2.10">
+			<revision name="3.2.6" status="release" pubdate="20131130224750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2663" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-native_2.10/ivy-3.2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.6/json4s-native_2.10-3.2.6.pom"/>
+				<caller organisation="scala-ghost-lib" name="scala-ghost-lib_2.10" conf="compile" rev="3.2.6" rev-constraint-default="3.2.6" rev-constraint-dynamic="3.2.6" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="json4s-native_2.10" type="jar" ext="jar" status="no" details="" size="68735" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.6/json4s-native_2.10-3.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.10">
+			<revision name="3.2.6" status="release" pubdate="20131130224736" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2936" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-core_2.10/ivy-3.2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.6/json4s-core_2.10-3.2.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-native_2.10" conf="default, compile, runtime, master" rev="3.2.6" rev-constraint-default="3.2.6" rev-constraint-dynamic="3.2.6" callerrev="3.2.6"/>
+				<artifacts>
+					<artifact name="json4s-core_2.10" type="jar" ext="jar" status="no" details="" size="579141" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.6/json4s-core_2.10-3.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.10.0" status="release" pubdate="20121219233017" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2518" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.6"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="855012" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.6" status="release" pubdate="20131008205654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="4051" time="0" location="/Users/chrismarlow/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="3.2.6"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/chrismarlow/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.10">
+			<revision name="3.2.6" status="release" pubdate="20131130224712" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2515" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-ast_2.10/ivy-3.2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.6/json4s-ast_2.10-3.2.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="3.2.6" rev-constraint-default="3.2.6" rev-constraint-dynamic="3.2.6" callerrev="3.2.6"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.10" type="jar" ext="jar" status="no" details="" size="87285" time="0" location="/Users/chrismarlow/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.6/json4s-ast_2.10-3.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.5" status="release" pubdate="20130325135226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<metadata-artifact status="no" details="" size="4507" time="0" location="/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom"/>
+				<caller organisation="scala-ghost-lib" name="scala-ghost-lib_2.10" conf="compile" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10680" time="0" location="/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="uk.co.bigbeeconsultants" name="bee-client_2.10">
+			<revision name="0.21.6" status="release" pubdate="20130710071246" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bigbeeconsultants.co.uk/bee-client" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3518" time="0" location="/Users/chrismarlow/.ivy2/cache/uk.co.bigbeeconsultants/bee-client_2.10/ivy-0.21.6.xml" searched="true" origin-is-local="false" origin-location="http://repo.bigbeeconsultants.co.uk/repo/uk/co/bigbeeconsultants/bee-client_2.10/0.21.6/bee-client_2.10-0.21.6.pom"/>
+				<caller organisation="scala-ghost-lib" name="scala-ghost-lib_2.10" conf="compile" rev="0.21.+" rev-constraint-default="0.21.+" rev-constraint-dynamic="0.21.+" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="bee-client_2.10" type="jar" ext="jar" status="no" details="" size="565389" time="0" location="/Users/chrismarlow/.ivy2/cache/uk.co.bigbeeconsultants/bee-client_2.10/jars/bee-client_2.10-0.21.6.jar">
+						<origin-location is-local="false" location="http://repo.bigbeeconsultants.co.uk/repo/uk/co/bigbeeconsultants/bee-client_2.10/0.21.6/bee-client_2.10-0.21.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mortbay.jetty" name="servlet-api">
+			<revision name="2.5.20110712" status="release" pubdate="20110711181522" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<metadata-artifact status="no" details="" size="3106" time="0" location="/Users/chrismarlow/.ivy2/cache/org.mortbay.jetty/servlet-api/ivy-2.5.20110712.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5.20110712/servlet-api-2.5.20110712.pom"/>
+				<caller organisation="uk.co.bigbeeconsultants" name="bee-client_2.10" conf="default, compile, runtime, master" rev="2.5.20110712" rev-constraint-default="2.5.20110712" rev-constraint-dynamic="2.5.20110712" callerrev="0.21.6"/>
+				<artifacts>
+					<artifact name="servlet-api" type="jar" ext="jar" status="no" details="" size="133237" time="0" location="/Users/chrismarlow/.ivy2/cache/org.mortbay.jetty/servlet-api/jars/servlet-api-2.5.20110712.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mortbay/jetty/servlet-api/2.5.20110712/servlet-api-2.5.20110712.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.5" status="release" pubdate="20130325135215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<metadata-artifact status="no" details="" size="4469" time="0" location="/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<caller organisation="uk.co.bigbeeconsultants" name="bee-client_2.10" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.21.6"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="26084" time="0" location="/Users/chrismarlow/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927024454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2585" time="0" location="/Users/chrismarlow/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.0" callerrev="3.2.6"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.10.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.10.3"/>
+				<caller organisation="org.json4s" name="json4s-native_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.0" callerrev="3.2.6"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.0" callerrev="3.2.6"/>
+				<caller organisation="uk.co.bigbeeconsultants" name="bee-client_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.1" callerrev="0.21.6"/>
+				<caller organisation="scala-ghost-lib" name="scala-ghost-lib_2.10" conf="compile" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

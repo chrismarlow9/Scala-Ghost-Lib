@@ -1,0 +1,40 @@
+compile
+run
+cd ..
+ls
+exit
+testOnly examples
+textOnly Simple
+testOnly Simple
+test-only Simpl
+test-only Simple
+exit
+test-only Simple
+test-only examples.Simple
+test Simple
+test-only Simple
+test
+sbt compile
+compile
+test
+exit
+test-only Simple
+test-only App.Simple
+test-only examples.Simple
+test-only Simple
+exit
+it:test-only Simple
+test-only Simple
+test-only com.ghostutils.Simple
+com.ghostutils.Simple
+compile
+tst
+test
+exit
+compile
+run
+test-only Sample
+test-only examples.Sample
+test
+test-only Simple
+exit
